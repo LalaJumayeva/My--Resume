@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Offside&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      text-align: center;
+    }
+
+    .alien {
+      width: 70px;
+      height: 60px;
+      position: relative;
+
+      animation-name: alien;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes alien {
+      0% {
+        left: -600px;
+        top: 0px;
+      }
+
+      20% {
+        left: 600px;
+        top: 0px;
+      }
+
+      40% {
+        left: 600px;
+        top: 550px;
+      }
+
+      60% {
+        left: 600px;
+        top: 550px;
+      }
+
+      80% {
+        left: -600px;
+        top: 550px;
+      }
+
+      100% {
+        left: -600px;
+        top: 0px;
+      }
+    }
+
+
+    .pro {
+      font-weight: lighter;
+      position: relative;
+      color: white;
+      top: 80px;
+      font-family: 'Offside', cursive;
+    }
+
+    .web {
+      text-decoration: underline;
+    }
+
+    .background {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      max-width: 100%;
+      min-width: 100%;
+      max-height: 100%;
+      min-height: 100%;
+
+    }
+
+    #btncntc{
+      font-family: 'Space Mono', monospace;
+      width: 180px;
+      font-size: 18px;
+      padding: 10px;
+      background: #392d69;
+      color: #fff;
+      cursor: pointer;
+      position: relative;
+      top: 80px;
+      border-radius: 8px;
+      left: 360px;
+
+    }
+
+    #btncntc:hover {
+      background: #ddd;
+      color: black;
+    }
+
+
+    #btncv {
+      font-family: 'Space Mono', monospace;
+      width: 180px;
+      font-size: 18px;
+      padding: 10px;
+      background: #392d69;
+      color: #fff;
+      cursor: pointer;
+      position: relative;
+      top: 80px;
+      border-radius: 8px;
+      right: 0px;
+    }
+
+    #btncv:hover {
+      background: #ddd;
+      color: black;
+    }
+
+    #middle-container {
+      width: 60%;
+      margin: 100px auto 100px auto;
+      position: relative;
+      top: 280px;
+      color: white;
+      font-family: 'Space Mono', monospace;
+
+    }
+
+    .skill-row {
+      text-align: left;
+      line-height: 2;
+    }
+
+    #third-container {
+      width: 60%;
+      margin: 100px auto 100px auto;
+      position: relative;
+      top: 280px;
+      color: white;
+      font-family: 'Space Mono', monospace;
+    }
+
+    .contact-me {
+      text-align: left;
+      line-height: 2;
+    }
+
+    .bottom-container {
+      background-color: #42047e;
+      height: 100px;
+      width: 100%;
+      position: relative;
+      top: 400px;
+      color: #DCBEFA;
+      font-family: 'Space Mono', monospace;
+    }
+
+    #btncntc:hover {
+      background: #ddd;
+      color: black;
+    }
+
+
+    .footer {
+      color: #DCBEFA;
+      position: relative;
+      top: 30px;
+    }
+
+
+
+    .footer-link {
+      color: #DCBEFA;
+      text-decoration: none;
+      margin: 10px 20px ;
+    }
+
+    .footer-link: hover {
+      color: #red;
+    }
+
+    .altbir {
+      position: absolute;
+      top: 800px;
+      background-color: black;
+      opacity: 50%;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .btn {
+      color: white;
+      font-size: 1.1rem;
+    }
+
+    .craft {
+      width: 30%;
+      height: auto;
+      float: left;
+      margin-right: 40px;
+    }
+
+    .catto {
+      position: relative;
+      bottom: 50px;
+      width: 22%;
+      height: auto;
+      float: right;
+      margin-left: 50px;
+    }
+
+    .pokemon {
+      position: relative;
+      width: 300px;
+      height: auto;
+      top: 10px;
+      left: 120px;
+
+    }
+
+    .welcome {
+      font-family: 'Offside', cursive;
+      position: relative;
+      color: white;
+      top: 0px;
+      font-size: 2.5rem;
+      margin-bottom: 0;
+
+    }
+
+    .millions {
+      margin-top: 0;
+      font-family: 'Offside', cursive;
+      font-weight: lighter;
+      position: relative;
+      color: white;
+      top: 10px;
+    }
+
+    .logo {
+      position: relative;
+      width: 270px;
+      height: auto;
+      top: 170px;
+      right: 160px;
+    }
+
+    .container {
+      position: relative;
+      top: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-width: 0;
+    }
+
+    .chevron {
+      position: absolute;
+      width: 2.1rem;
+      height: 0.48rem;
+      opacity: 0;
+      transform: scale(0.3);
+      -webkit-animation: move-chevron 3s ease-out infinite;
+      animation: move-chevron 3s ease-out infinite;
+    }
+
+    .chevron:first-child {
+      -webkit-animation: move-chevron 3s ease-out 1s infinite;
+      animation: move-chevron 3s ease-out 1s infinite;
+    }
+
+    .chevron:nth-child(2) {
+      -webkit-animation: move-chevron 3s ease-out 2s infinite;
+      animation: move-chevron 3s ease-out 2s infinite;
+    }
+
+    .chevron:before,
+    .chevron:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 50%;
+      background: #fff;
+    }
+
+    .chevron:before {
+      left: 0;
+      transform: skewY(30deg);
+    }
+
+    .chevron:after {
+      right: 0;
+      width: 50%;
+      transform: skewY(-30deg);
+    }
+
+    @-webkit-keyframes move-chevron {
+      25% {
+        opacity: 1;
+      }
+
+      33.3% {
+        opacity: 1;
+        transform: translateY(2.28rem);
+      }
+
+      66.6% {
+        opacity: 1;
+        transform: translateY(3.12rem);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(4.8rem) scale(0.5);
+      }
+    }
+
+    @keyframes move-chevron {
+      25% {
+        opacity: 1;
+      }
+
+      33.3% {
+        opacity: 1;
+        transform: translateY(2.28rem);
+      }
+
+      66.6% {
+        opacity: 1;
+        transform: translateY(3.12rem);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(4.8rem) scale(0.5);
+      }
+    }
+
+    hr {
+      border:none;
+border-top:5px dotted #6915bd;
+width:100%;
+    }
+
+    h2 {
+      color: #DCBEFA;
+      font-size: 1.7rem;
+    }
+
+    h3 {
+        color: #DCBEFA;
+      font-size: 1.3rem;
+      font-weight: lighter;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="images/stars.png" alt class="background" />
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <a class="navbar-brand" href="index.html">
+    <img src="images/logo.png" width="150" height="auto" class="d-inline-block align-top" alt="">
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="mailto: jumayevalala98@gmail.com">Contact</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="myresume.html">About</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="images/Lala Cumayeva Resume.pdf">Download CV</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <img class="alien" src="images/alien.png" alt="alien">
+  <h1 class="welcome">WELCOME TO LALAVERSE!</h1>
+  <h3 class="millions">Millions of humans and aliens around the infinite universes visits here.. </h3>
+  <img src="images/alien.gif" alt class="pokemon">
+  <a href="index.html" alt="index"><img src="images/logo.png" alt class="logo" /></a>
+  <h3 class="pro"> a <span class="web">web</span> designer </h3>
+<a href="images/Lala Cumayeva Resume.pdf" download><button id="btncv">Download my CV</button> </a>
+  <div class="altbir"> </div>
+
+  <div class="container">
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+  </div>
+
+  <div id="middle-container">
+
+    <div class="profile">
+      <h2>👽Hello!‍👽</h2>
+      <p>
+        I am a UI/UX Designer and junior Front-end Developer. I'm interested in every subject (because every subject has its own magical vibe with full of mysteries) especially web design and development! I ❤️ cats and video games
+      </p>
+    </div>
+    <hr />
+    <div class="skills">
+      <h2>My Skills</h2>
+      <div class="skill-row">
+        <img class="craft" src="images/pixel.png" alt="pix" />
+        <h3> Design & development </h3>
+        <p>
+          I started to create and design some stuff when I was 7 years old because the beauty of the colors and shapes enchanted me since then. Over time, I have gained a wealth of experience designing mobile and web applications. Now I'm also
+          learning how to build these applications by coding! :)
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="third-container">
+        <hr />
+          <h2>Get In Touch</h2>
+    <div class="contact-me">
+      <img src="images/catto.gif" alt class="catto" />
+      <h3> Want to get in touch? Here's how you can reach me: </h3>
+      <p>
+        Just click on the "CONTACT ME" button for reaching me via my professional email address! You are also able to find me on LinkedIn and Behance platforms as well..:)
+      </p>
+      <a class="btn" href="mailto: jumayevalala98@gmail.com"> <button id="btncntc">CONTACT ME</button></a>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <div class="footer">
+    <a class="footer-link" href="https://www.linkedin.com/in/lala-jumayeva98/">LinkedIn  ✨</a>
+    <a class="footer-link" href="https://www.behance.net/lalacumayeva">  ✨Behance</a>
+    <p>
+      © 2022 Lala Jumayeva.
+    </p>
+      </div>
+  </div>
+</body>
+
+</html>
