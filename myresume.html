@@ -7,10 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Offside&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
@@ -21,7 +21,7 @@
       width: 70px;
       height: 60px;
       position: relative;
-
+      overflow: hidden;
       animation-name: alien;
       animation-duration: 8s;
       animation-iteration-count: infinite;
@@ -29,32 +29,27 @@
 
     @keyframes alien {
       0% {
-        left: -600px;
+        left: -45%;
         top: 0px;
       }
 
-      20% {
-        left: 600px;
-        top: 0px;
+      25% {
+        left: 45%;
+        top: 0;
       }
 
-      40% {
-        left: 600px;
+      50% {
+        left: 45%;
         top: 550px;
       }
 
-      60% {
-        left: 600px;
-        top: 550px;
-      }
-
-      80% {
-        left: -600px;
+      75% {
+        left: -45%;
         top: 550px;
       }
 
       100% {
-        left: -600px;
+        left: -45%;
         top: 0px;
       }
     }
@@ -72,21 +67,18 @@
       text-decoration: underline;
     }
 
+
     .background {
-      text-align: center;
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       max-width: 100%;
-      min-width: 100%;
-      max-height: 100%;
       min-height: 100%;
-
     }
 
-    #btncntc{
+    #btncntc {
       font-family: 'Space Mono', monospace;
       width: 180px;
       font-size: 18px;
@@ -97,7 +89,6 @@
       position: relative;
       top: 80px;
       border-radius: 8px;
-      left: 360px;
 
     }
 
@@ -157,7 +148,7 @@
 
     .bottom-container {
       background-color: #42047e;
-      height: 100px;
+      height: 120px;
       width: 100%;
       position: relative;
       top: 400px;
@@ -185,7 +176,7 @@
     .footer-link {
       color: #DCBEFA;
       text-decoration: none;
-      margin: 10px 20px ;
+      margin: 10px 20px;
     }
 
     .footer-link: hover {
@@ -193,7 +184,7 @@
     }
 
     .altbir {
-      position: absolute;
+      position: fixed;
       top: 800px;
       background-color: black;
       opacity: 50%;
@@ -352,9 +343,9 @@
     }
 
     hr {
-      border:none;
-border-top:5px dotted #6915bd;
-width:100%;
+      border: none;
+      border-top: 5px dotted #6915bd;
+      width: 100%;
     }
 
     h2 {
@@ -363,7 +354,7 @@ width:100%;
     }
 
     h3 {
-        color: #DCBEFA;
+      color: #DCBEFA;
       font-size: 1.3rem;
       font-weight: lighter;
     }
@@ -371,36 +362,39 @@ width:100%;
 </head>
 
 <body>
-  <img src="stars.png" alt class="background" />
+  <img src="images/stars.png" alt class="background" />
   <nav class="navbar navbar-expand-lg navbar-dark bg-black">
     <a class="navbar-brand" href="index.html">
-    <img src="images/logo.png" width="150" height="auto" class="d-inline-block align-top" alt="">
-  </a>
+      <img src="images/logo.png" width="150" height="auto" class="d-inline-block align-top" alt="">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="mailto: jumayevalala98@gmail.com">Contact</a>
         </li>
-          <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="myresume.html">About</a>
         </li>
-          <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="images/Lala Cumayeva Resume.pdf">Download CV</a>
         </li>
       </ul>
     </div>
   </nav>
-  <img class="alien" src="images/alien.png" alt="alien">
+  <div id="ani">
+    <img class="alien" src="images/alien.png" alt="alien">
+  </div>
   <h1 class="welcome">WELCOME TO LALAVERSE!</h1>
   <h3 class="millions">Millions of humans and aliens around the infinite universes visits here.. </h3>
   <img src="images/alien.gif" alt class="pokemon">
   <a href="index.html" alt="index"><img src="images/logo.png" alt class="logo" /></a>
   <h3 class="pro"> a <span class="web">web</span> designer </h3>
-<a href="images/Lala Cumayeva Resume.pdf" download><button id="btncv">Download my CV</button> </a>
+  <a href="images/Lala Cumayeva Resume.pdf" download><button id="btncv">Download my CV</button> </a>
   <div class="altbir"> </div>
 
   <div class="container">
@@ -431,26 +425,26 @@ width:100%;
     </div>
   </div>
   <div id="third-container">
-        <hr />
-          <h2>Get In Touch</h2>
+    <hr />
+    <h2>Get In Touch</h2>
     <div class="contact-me">
       <img src="images/catto.gif" alt class="catto" />
       <h3> Want to get in touch? Here's how you can reach me: </h3>
       <p>
         Just click on the "CONTACT ME" button for reaching me via my professional email address! You are also able to find me on LinkedIn and Behance platforms as well..:)
       </p>
-      <a class="btn" href="mailto: jumayevalala98@gmail.com"> <button id="btncntc">CONTACT ME</button></a>
+      <a class="btn col-lg-12 col-sm-12" href="mailto: jumayevalala98@gmail.com"> <button id="btncntc">CONTACT ME</button></a>
     </div>
   </div>
 
   <div class="bottom-container">
     <div class="footer">
-    <a class="footer-link" href="https://www.linkedin.com/in/lala-jumayeva98/">LinkedIn  ✨</a>
-    <a class="footer-link" href="https://www.behance.net/lalacumayeva">  ✨Behance</a>
-    <p>
-      © 2022 Lala Jumayeva.
-    </p>
-      </div>
+      <a class="footer-link" href="https://www.linkedin.com/in/lala-jumayeva98/">LinkedIn ✨</a>
+      <a class="footer-link" href="https://www.behance.net/lalacumayeva"> ✨Behance</a>
+      <p>
+        © 2022 Lala Jumayeva.
+      </p>
+    </div>
   </div>
 </body>
 
