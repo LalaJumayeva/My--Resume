@@ -4,7 +4,11 @@
   <title>Lala Jumayeva</title>
   <link rel="icon" type="images/favicon" href="images/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="profile" type="css-mysite/myresume" href="css-mysite/myresume.html" <style>
+  <link rel="profile" type="css-mysite/myresume" href="myresume.html" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <style>
     body {
@@ -13,8 +17,7 @@
       font-size: 17px;
     }
 
-    #myVideo {
-      text-align: center;
+    #myvideo {
       position: fixed;
       top: 0;
       left: 0;
@@ -25,12 +28,49 @@
       min-width: 100%;
     }
 
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      max-width: 100%;
+      object-fit: cover;
+      min-width: 100%;
+    }
+
+    @media screen and (max-aspect-ratio: 3840/2160) {
+      #myvideo {
+        display: none !important;
+      }
+
+      .background {
+        background-image: url('images/stardust.jpg');
+      }
+    }
+
+    @media screen and (max-width: 930px) {
+
+      .mylogo {
+        width: 35% !important;
+        padding: 5% 3% !important;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
 
     .mylogo {
       position: fixed;
       width: 12%;
-      padding: 20px;
+      padding: 2% 1.5%;
     }
+
 
     .mylinkedin {
       position: fixed;
@@ -56,13 +96,34 @@
       background: rgba(0, 0, 0, 0.5);
       color: #f1f1f1;
       width: 50%;
-      padding: 0px;
       height: 270px;
     }
 
+    @media (min-width:500px) and (max-width:1000px) {
+      .content {
+        height: 370px;
+      }
+    }
+
+    @media (max-width:500px) {
+      .content {
+        height: 400px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+    }
+
+
     .incontent {
       position: relative;
-      left:10px;
+      left: 10px;
+      padding: 4%;
     }
 
     .parts {
@@ -77,10 +138,29 @@
       height: 270px;
     }
 
+    @media (min-width:500px) and (max-width:1000px) {
+      .parts {
+        height: 370px;
+      }
+    }
+
+    @media (max-width:500px) {
+      .parts {
+        height: 400px;
+      }
+    }
+
     .secret {
       width: 150px;
       height: 150px;
     }
+
+    .secretwo {
+      width: 150px;
+      height: 150px;
+    }
+
+
 
     #red {
       width: 100px;
@@ -89,6 +169,7 @@
       top: 60px;
       left: 320px;
     }
+
 
     #blue {
       width: 100px;
@@ -109,30 +190,82 @@
       left: 130px;
     }
 
-    #myBtn {
-      width: 200px;
-      font-size: 18px;
-      padding: 10px;
-      border-radius: 8px;
-      background: #1B1A17;
-      color: #fff;
-      cursor: pointer;
+    @media screen and (max-width:800px) {
+      .secrett {
+        width: 50px;
+        height: 85px;
+      }
+
+    #yellow{
+      left: 50px;
+      top: 8px;
     }
 
-    #myBtn:hover {
-      background: #ddd;
-      color: black;
+    .secret {
+      width: 70px;
+      height: 85px;
     }
 
+    #red {
+      left: 16px;
+      top: 110px;
+    }
+
+    .secretwo {
+      width: 60px;
+      height: 75px;
+    }
+
+    #blue {
+      left: 12px;
+      top: 205px;
+    }
+  }
+
+  @media screen and (min-width:750px) and (max-width:1280px) {
+    .secrett {
+      width: 80px;
+      height: 115px;
+    }
+
+  #yellow{
+    left: 50px;
+    top: 70px;
+  }
+
+  .secret {
+    width: 100px;
+    height: 115px;
+  }
+
+  #red {
+    left: 160px;
+    top: 75px;
+  }
+
+  .secretwo {
+    width: 95px;
+    height: 115px;
+  }
+
+  #blue {
+    left: 280px;
+    top: 78px;
+  }
+}
+    .myBtn {
+      font-size: 0.8rem;
+     }
   </style>
 </head>
 
 <body>
-  <video autoplay muted loop id="myVideo">
-    <source src="images/back.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
-
+  <div class="background">
+    <video autoplay muted loop id="myVideo">
+      <source src="images/back.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
   <a class="mylinkedin" href="https://www.linkedin.com/in/lala-jumayeva98/">
     <img src="images/linkedin.png" alt="linkedin" width="50px" height="50px" />
   </a>
@@ -147,20 +280,20 @@
   </div>
 
   <div class="content">
-    <div class="incontent">
-    <h1>Hey, I'm Lala!</h1>
-    <p>I'm a UI/UX Designer and Junior Front-end Developer. This is my universe. You can either check my resume(if you want to hire me or I'm just interesting to you), or click on random button to see the secret parts of this universe! ;)</p>
-     <button id="myBtn" onclick=" window.open('myresume.html','_blank')">About Me</button>
+    <div class="incontent col-sm-12">
+      <h1>Hey, I'm Lala!</h1>
+      <p>I'm a UI/UX Designer and Junior Front-end Developer. This is my universe. You can either check my resume(if you want to hire me or I'm just interesting to you), or click on random button to see the secret parts of this universe! ;)</p>
+    <a class="aboutme" href="myresume.html"><button type="button" class="btn btn-dark btn-lg myBtn">About Me</button></a>
+    </div>
   </div>
-  </div>
-  <div class="parts">
-    <div id=red>
+  <div class="parts col-sm-12">
+    <div id="red">
       <img src="images/circle.png" alt class="secret" />
     </div>
-    <div id=blue>
-      <img src="images/blue.png" alt class="secret" />
+    <div id="blue">
+      <img src="images/blue.png" alt class="secretwo" />
     </div>
-    <div id=yellow>
+    <div id="yellow">
       <img src="images/yellow.png" alt class="secrett" />
     </div>
   </div>
